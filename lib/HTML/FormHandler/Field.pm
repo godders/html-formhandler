@@ -653,7 +653,7 @@ sub build_html_name
 }
 has 'widget'         => ( isa => 'Str',  is => 'rw' );
 has 'widget_wrapper' => ( isa => 'Str',  is => 'rw', default => 'div' );
-has 'widget_name_space' => ( isa => 'Str', is => 'rw' );
+has 'widget_name_space' => ( isa => 'Str|ArrayRef[Str]', is => 'rw' );
 has 'order'          => ( isa => 'Int',  is => 'rw', default => 0 );
 has 'inactive'       => ( isa => 'Bool', is => 'rw', clearer => 'clear_inactive' );
 has 'unique'         => ( isa => 'Bool', is => 'rw' );
